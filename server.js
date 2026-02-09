@@ -11,7 +11,12 @@ const crypto = require('crypto');
 
 
 // Middleware
-app.use(cors());
+const cors = require('cors');
+
+app.use(cors({
+  origin: 'https://your-project-name.vercel.app', // Your actual Vercel URL
+  credentials: true
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
