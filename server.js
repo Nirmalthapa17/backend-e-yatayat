@@ -14,7 +14,7 @@ const crypto = require('crypto');
 const cors = require('cors');
 
 app.use(cors({
-  origin: 'https://your-project-name.vercel.app', // Your actual Vercel URL
+  origin: 'https://frontende-yatayat-six.vercel.app/', // Your actual Vercel URL
   credentials: true
 }));
 app.use(express.json());
